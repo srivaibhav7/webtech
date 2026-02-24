@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Calculator</h1>
+    <h3>Use me for Calculating Arithmetic Operations</h3>
+
+    <input type="number" id="Num1" placeholder="Enter 1st Number">
+    <input type="number" id="Num2" placeholder="Enter 2nd Number">
+
+    <div>
+        <button onclick="calculate('+');">+</button>
+        <button onclick="calculate('-');">-</button>
+        <button onclick="calculate('*');">*</button>
+        <button onclick="calculate('/')">/</button>
+    </div>
+    
+
+    <p id="result"></p>
+
+    <script>
+        function calculate(operation) 
+        {
+            let num1 = Number(document.getElementById('Num1').value);
+            let num2 = Number(document.getElementById('Num2').value);
+            let result;
+            if(operation === '+') {
+                result = num1+num2;
+            }
+            else if(operation === '-') {
+                result = num1-num2;
+            }
+            else if(operation === '*') {
+                result = num1*num2;
+            }
+            else if(operation === '/') {
+                result = num1/num2;
+            }
+            document.getElementById('result').innerHTML = 'Result = '+result;
+        }
+        
+    </script>
+</body>
+</html>
