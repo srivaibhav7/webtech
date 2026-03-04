@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Data</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="table-container">
+
+<h1>Student Records</h1>
+
+<table border="1" id="table">
+
+<thead>
+
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>DOB</th>
+<th>Gender</th>
+<th>Course</th>
+<th>Skills</th>
+<th>Address</th>
+</tr>
+
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+
+<br>
+<div class="button-group">
+
+<button onclick="downloadCSV()">Download CSV</button>
+
+<button onclick="copyTable()">Copy Table</button>
+
+</div>
+
+</div>
+
+<script src="table.js"></script>
+
+</body>
+</html>
